@@ -9,7 +9,7 @@ st.set_page_config(page_title="Solar Dashboard", layout="wide")
 st.title("Climate Impact on Solar Energy Generation")
 
 # Load Data
-df = pd.read_excel("Solar power generation.xlsx")
+df = pd.read_excel("../data/Solar power generation.xlsx")
 
 # Create Date column
 df["Date"] = pd.to_datetime(df[["YEAR","MONTH","DAY"]])
