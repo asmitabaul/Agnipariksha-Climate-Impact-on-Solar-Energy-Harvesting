@@ -9,6 +9,13 @@ st.set_page_config(page_title="Solar Dashboard", layout="wide")
 st.title("Climate Impact on Solar Energy Generation")
 
 # Load Data
+import os
+import streamlit as st
+
+st.write("Current working directory:", os.getcwd())
+st.write("Files in current directory:", os.listdir("."))
+
+st.write("Parent directory files:", os.listdir(".."))
 df = pd.read_excel("../data/Solar power generation.xlsx")
 
 # Create Date column
